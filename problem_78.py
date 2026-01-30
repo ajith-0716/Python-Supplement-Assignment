@@ -3,7 +3,7 @@
 
 def find_duplicates(lst):
     seen = set()
-    duplicates = []
+    duplicates = set()
     for item in lst:
         if item in seen:
             duplicates.append(item)
