@@ -2,11 +2,12 @@
 # Find and fix the error
 
 def nth_fibonacci(n):
-    if n <= 1:
-        return n
-    a, b = 0, 1
-    for i in range(2, n):
+    if n == 1 or n == 2:
+        return 1
+    a, b = 1, 1
+    for _ in range(3, n + 1):
         a, b = b, a + b
     return b
 
 print(f"10th Fibonacci number: {nth_fibonacci(10)}")
+
